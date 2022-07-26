@@ -1,0 +1,23 @@
+.join-btr{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+.join{
+    text-align: center;
+    padding: 10%;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .join-btr{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .join-btr{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
