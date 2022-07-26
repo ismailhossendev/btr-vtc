@@ -1,6 +1,7 @@
 .join-btr{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    
     gap: 20px;
     
 }
@@ -19,11 +20,22 @@
     grid-column: span 2;
     grid-row: span 2;
 }
-
+.pc-dis-none{
+    display: none;
+}
 
 @media screen and (max-width:576px) {
     .join-btr{
         grid-template-columns: 1fr;
+    }
+    .btr-gallary{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .m-dis-none{
+        display: none;
+    }
+    .pc-dis-none{
+        display: inline;
     }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
